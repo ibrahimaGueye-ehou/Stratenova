@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StratéNova - Conseil en stratégie & Indice de la Dette Temporelle (IDT)</title>
+  <meta name="description" content="StratéNova accompagne les PME et entreprises en Côte d'Ivoire et Afrique de l'Ouest pour identifier leurs difficultés organisationnelles, financières et opérationnelles grâce à l'Indice de la Dette Temporelle (IDT), au Dispositif d'Implantation Commerciale (DIC™) et à la Matrice de Transition Internationale (MTI™).">
+  <!-- Google Fonts: Cormorant Garamond / Playfair & Plus Jakarta Sans / Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="StratéNova Accueil">
+        <img src="assets/logo.png" alt="StratéNova" class="logo-img" width="90" height="20">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="main-nav" aria-label="Navigation principale">
+        <a href="#cabinet" class="nav-link">Le cabinet</a>
+        <a href="#dette-temporelle" class="nav-link">Dette temporelle</a>
+        <a href="#idt" class="nav-link">IDT</a>
+        <a href="#expertises" class="nav-link">Expertises</a>
+        <a href="#methode" class="nav-link">Méthode</a>
+        <a href="#analyses" class="nav-link">Analyses</a>
+      </nav>
+
+      <div class="header-action">
+        <a href="#contact" class="btn-rdv-header">Prendre rendez-vous</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <nav class="mobile-nav">
+      <a href="#cabinet" class="mobile-nav-link">Le cabinet</a>
+      <a href="#dette-temporelle" class="mobile-nav-link">Dette temporelle</a>
+      <a href="#idt" class="mobile-nav-link">IDT</a>
+      <a href="#expertises" class="mobile-nav-link">Expertises</a>
+      <a href="#methode" class="mobile-nav-link">Méthode</a>
+      <a href="#analyses" class="mobile-nav-link">Analyses</a>
+      <a href="#offres" class="mobile-nav-link">Nos Offres</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#contact" class="btn btn-primary w-full text-center mt-4">Prendre rendez-vous</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- HERO SECTION (Pixel-perfect match with Straté-Nova.png) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Hero Left Column: Text & CTAs -->
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Le temps perdu est<br>
+            la dette que vos<br>
+            comptes ne<br>
+            montrent pas.
+          </h1>
+          <p class="hero-subtitle">
+            StratéNova accompagne les PME de Côte d’Ivoire et d’Afrique pour identifier leurs difficultés organisationnelles, financières et opérationnelles, et mesurer ce qu’elles leur coûtent grâce à l’Indice de la Dette Temporelle (IDT).
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+            <a href="#idt" class="btn btn-outline">Découvrir l’IDT</a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Indice de la Dette Temporelle Card -->
+        <div class="hero-card-col">
+          <div class="idt-widget-card" id="idt-widget">
+            <h2 class="widget-title">Indice de la Dette Temporelle</h2>
+
+            <div class="gauge-group">
+              <div class="gauge-header">
+                <span class="gauge-label">Pertes de temps</span>
+              </div>
+              <div class="gauge-bar-track">
+                <div class="gauge-bar-fill fill-72" style="width: 72%;"></div>
+              </div>
+            </div>
+
+            <div class="gauge-group">
+              <div class="gauge-header">
+                <span class="gauge-label">Dysfonctionnements</span>
+              </div>
+              <div class="gauge-bar-track">
+                <div class="gauge-bar-fill fill-54" style="width: 54%;"></div>
+              </div>
+            </div>
+
+            <div class="gauge-group">
+              <div class="gauge-header">
+                <span class="gauge-label">Coûts invisibles</span>
+              </div>
+              <div class="gauge-bar-track">
+                <div class="gauge-bar-fill fill-63" style="width: 63%;"></div>
+              </div>
+            </div>
+
+            <div class="gauge-scale">
+              <span class="scale-min">Maîtrisé</span>
+              <span class="scale-max">Critique</span>
+            </div>
+
+            <p class="widget-footnote">Illustration du principe de mesure, sans valeurs réelles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Le Cabinet -->
+    <section class="section section-cabinet" id="cabinet">
+      <div class="container">
+        <div class="section-badge">Le cabinet</div>
+        <div class="grid-2col">
+          <div>
+            <h2 class="section-title">Conseil de direction, rigueur stratégique & expansion en Afrique de l'Ouest</h2>
+            <p class="lead-text">
+              StratéNova est un cabinet de conseil stratégique engagé aux côtés des dirigeants de PME, ETI et groupes industriels en Côte d’Ivoire et en Afrique sub-saharienne.
+            </p>
+            <p class="body-text">
+              Dans un environnement économique compétitif et volatil, nous aidons les chefs d’entreprise à dépasser les seuls indicateurs financiers rétrospectifs. Nous mettons en lumière les goulets d’étranglement temporels et organisationnels qui érodent la rentabilité, et nous structurons leur passage à l'échelle régionale.
+            </p>
+            <div class="cabinet-stats">
+              <div class="stat-card">
+                <div class="stat-num">11</div>
+                <div class="stat-desc">Dimensions stratégiques analysées via la MTI™</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">55</div>
+                <div class="stat-desc">Sous-dimensions évaluées pour une vue prédictive</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">100%</div>
+                <div class="stat-desc">Ancré dans les réalités de terrain en Afrique</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="president-quote-box">
+            <div class="quote-media">
+              <img src="assets/auguste-dago.jpg" alt="Auguste Dago - Président de StratéNova" class="president-img" loading="lazy">
+            </div>
+            <blockquote class="president-quote">
+              “StratéNova propose une approche différenciante du conseil stratégique à travers la Matrice de Transition Internationale (MTI™) et l'Indice de la Dette Temporelle (IDT), véritables leviers de compétitivité des entreprises dans leur transformation et leur internationalisation.”
+            </blockquote>
+            <div class="president-meta">
+              <strong>Auguste Dago</strong>
+              <span>Président de StratéNova</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Dette Temporelle -->
+    <section class="section section-dark" id="dette-temporelle">
+      <div class="container">
+        <div class="section-badge gold">Dette temporelle</div>
+        <div class="section-header-centered">
+          <h2 class="section-title text-white">Qu'est-ce que la dette temporelle d'une entreprise ?</h2>
+          <p class="section-subtitle">
+            Tout le monde comprend la dette financière inscrite au bilan. Mais peu de dirigeants mesurent la dette temporelle accumulée jour après jour par les lenteurs de décision et les circuits opérationnels inadaptés.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="feature-icon">⏳</div>
+            <h3 class="feature-title">Pertes de temps invisibles</h3>
+            <p class="feature-desc">
+              Délais de validation excessifs, réunions improductives, reprises manuelles d’informations : des heures précieuses consommées au détriment du développement commercial et du service client.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3 class="feature-title">Dysfonctionnements chroniques</h3>
+            <p class="feature-desc">
+              Processus non standardisés, friction entre départements, dépendance excessive envers quelques collaborateurs clés : un fonctionnement fragile qui freine la montée en cadence.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📉</div>
+            <h3 class="feature-title">Coûts d'opportunité cachés</h3>
+            <p class="feature-desc">
+              Opportunités de marché manquées face à des concurrents plus agiles, surcoûts d’exploitation et retards de livraison qui finissent par grignoter vos marges nettes.
+            </p>
+          </div>
+        </div>
+
+        <div class="banner-highlight">
+          <div class="banner-content">
+            <h4>La dette temporelle agit comme un taux d'intérêt négatif continu sur votre croissance.</h4>
+            <p>Plus vous attendez pour la diagnostiquer, plus l'effort requis pour la résorber s'amplifie.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Faire auditer votre dette</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: IDT (Indice de la Dette Temporelle) -->
+    <section class="section" id="idt">
+      <div class="container">
+        <div class="section-badge">IDT</div>
+        <div class="grid-2col align-center">
+          <div>
+            <h2 class="section-title">L'Indice de la Dette Temporelle (IDT) : Révéler le coût réel de l'inefficience</h2>
+            <p class="lead-text">
+              L'IDT est la solution méthodologique mise au point par StratéNova pour cartographier, quantifier et résorber l'impact financier des lenteurs organisationnelles.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Diagnostic quantitatif & qualitatif :</strong>
+                  <span>Audit minutieux des circuits décisionnels, flux de communication et temps de cycle.</span>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Traduction financière concrète :</strong>
+                  <span>Conversion des heures perdues en équivalent masse salariale gaspillée et manque à gagner.</span>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Plan d'assainissement ciblé :</strong>
+                  <span>Feuille de route concrète pour libérer immédiatement des marges de manœuvre et redonner de l'élan aux équipes.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="mt-6">
+              <a href="#contact" class="btn btn-primary">Demander un diagnostic IDT</a>
+            </div>
+          </div>
+
+          <!-- Interactive Simulator IDT -->
+          <div class="idt-simulator-card">
+            <div class="sim-header">
+              <h3>Simulateur indicatif de Dette Temporelle</h3>
+              <p>Ajustez les curseurs pour observer l'incidence sur votre indice estimé :</p>
+            </div>
+            <div class="sim-controls">
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <label for="range-delais">Délais de décision internes</label>
+                  <span id="val-delais" class="sim-val">Élevés (75%)</span>
+                </div>
+                <input type="range" id="range-delais" min="10" max="100" value="75">
+              </div>
+
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <label for="range-process">Maturité des processus & outils</label>
+                  <span id="val-process" class="sim-val">Moyenne (50%)</span>
+                </div>
+                <input type="range" id="range-process" min="10" max="100" value="50">
+              </div>
+
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <label for="range-silos">Cloisonnement des équipes</label>
+                  <span id="val-silos" class="sim-val">Sensible (65%)</span>
+                </div>
+                <input type="range" id="range-silos" min="10" max="100" value="65">
+              </div>
+            </div>
+
+            <div class="sim-result-box">
+              <div class="sim-result-label">Score estimé de Dette Temporelle :</div>
+              <div class="sim-result-score" id="sim-score">63 / 100</div>
+              <div class="sim-result-status alert-critical" id="sim-status">Zone de vigilance critique</div>
+              <p class="sim-note">StratéNova intervient pour ramener ce score en zone maîtrisée (&lt; 25).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Expertises (DIC & MTI) -->
+    <section class="section section-gray" id="expertises">
+      <div class="container">
+        <div class="section-badge">Expertises</div>
+        <div class="section-header-centered">
+          <h2 class="section-title">Deux leviers majeurs pour votre rayonnement en Afrique de l'Ouest</h2>
+          <p class="section-subtitle">
+            Du Dispositif d'Implantation Commerciale à la Matrice de Transition Internationale, StratéNova combine rigueur tactique et vision stratégique.
+          </p>
+        </div>
+
+        <div class="grid-2col">
+          <!-- DIC Card -->
+          <div class="expertise-box">
+            <div class="box-tag">DIC™</div>
+            <h3>Dispositif d'Implantation Commerciale</h3>
+            <p class="box-desc">
+              Pour les entreprises et PME désireuses d’exporter ou d’implanter durablement leurs solutions en Afrique sub-saharienne sans subir de surcoûts d'infrastructure prématurés.
+            </p>
+            <ul class="bullet-list">
+              <li>Cartographie précise du marché cible et des filières acheteuses</li>
+              <li>Identification et qualification des partenaires locaux clés</li>
+              <li>Maîtrise des circuits d'achat et des contraintes réglementaires locales</li>
+              <li>Activation directe du réseau d’influence structurant de StratéNova</li>
+            </ul>
+            <div class="box-footer">
+              <span class="box-goal">Objectif : Assurer une présence locale rentable sans surinvestir.</span>
+            </div>
+          </div>
+
+          <!-- MTI Card -->
+          <div class="expertise-box featured">
+            <div class="box-tag gold-bg">MTI™</div>
+            <h3>Matrice de Transition Internationale</h3>
+            <p class="box-desc">
+              Une boussole stratégique conçue pour évaluer si votre entreprise est véritablement armée pour affronter la volatilité, les risques systémiques et les opportunités d'expansion.
+            </p>
+            <ul class="bullet-list">
+              <li>11 dimensions clés décomposées en 5 sous-dimensions (55 critères)</li>
+              <li>Indicateurs internes et externes (financiers, opérationnels, sectoriels)</li>
+              <li>Notation propriétaire certifiée valable 12 mois</li>
+              <li>Feuille de route prédictive pour anticiper les retournements de cycle</li>
+            </ul>
+            <div class="box-footer">
+              <span class="box-goal">Objectif : Piloter votre timing stratégique international et rassurer vos investisseurs.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Méthode (La MTI en détail) -->
+    <section class="section" id="methode">
+      <div class="container">
+        <div class="section-badge">Méthode</div>
+        <div class="section-header-centered">
+          <h2 class="section-title">Une méthode rigoureuse, transparente et prédictive</h2>
+          <p class="section-subtitle">
+            “La notation financière vous dit si une entreprise va bien aujourd’hui, alors que la MTI™ dit si elle est prête à bien aller demain.”
+          </p>
+        </div>
+
+        <div class="steps-grid-4">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h4>Diagnostic 360°</h4>
+            <p>Collecte des indicateurs organisationnels, financiers, juridiques et sectoriels de votre structure.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h4>Scoring Propriétaire</h4>
+            <p>Évaluation pondérée sur les 11 piliers de la MTI™ et modélisation de l'Indice de la Dette Temporelle.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h4>Restitution & Score</h4>
+            <p>Délivrance du rapport complet d'arbitrage et du certificat de maturité stratégique (valide 12 mois).</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h4>Coaching Stratégique</h4>
+            <p>Accompagnement de direction sur 4 mois pour orchestrer la montée en puissance et lever les freins.</p>
+          </div>
+        </div>
+
+        <div class="comparison-block">
+          <h3 class="comparison-title">Pourquoi compléter les indicateurs financiers par la MTI™ ?</h3>
+          <div class="comparison-grid">
+            <div class="comp-item old-way">
+              <h5>Approche financière classique (Bilan / TRI)</h5>
+              <ul>
+                <li>❌ Évalue uniquement le passé ou la solvabilité à très court terme</li>
+                <li>❌ Ne détecte pas l'érosion insidieuse du temps et de l'énergie des équipes</li>
+                <li>❌ Suppose des conditions de marché statiques et prévisibles</li>
+              </ul>
+            </div>
+            <div class="comp-item new-way">
+              <h5>Approche StratéNova (MTI™ & IDT)</h5>
+              <ul>
+                <li>✅ Évalue la vision, l'agilité organisationnelle et la résilience future</li>
+                <li>✅ Chiffre précisément le coût d'inaction et la dette temporelle</li>
+                <li>✅ Intègre la volatilité réelle des marchés africains et internationaux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Analyses & Perspectives -->
+    <section class="section section-dark" id="analyses">
+      <div class="container">
+        <div class="section-badge gold">Analyses</div>
+        <div class="section-header-centered">
+          <h2 class="section-title text-white">Éclairer les décisions critiques en Afrique de l'Ouest</h2>
+          <p class="section-subtitle">
+            Repères, analyses sectorielles et clés de lecture pour les dirigeants en quête d'avantage concurrentiel durable.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <article class="analysis-card">
+            <span class="analysis-category">Croissance Externe</span>
+            <h4>Fusions, acquisitions et intégration d'actifs industriels</h4>
+            <p>
+              Comment sécuriser une prise de participation ou l'intégration d'un site industriel en Afrique en évaluant la dette organisationnelle avant le closing ?
+            </p>
+            <a href="#contact" class="analysis-link">Échanger sur vos projets M&amp;A →</a>
+          </article>
+
+          <article class="analysis-card">
+            <span class="analysis-category">Gouvernance & PME</span>
+            <h4>Le piège de la centralisation excessive chez les fondateurs</h4>
+            <p>
+              Pourquoi 70% de la dette temporelle d'une PME en forte croissance provient du goulot d'étranglement de la direction générale et comment le lever ?
+            </p>
+            <a href="#contact" class="analysis-link">Découvrir les solutions de délégation →</a>
+          </article>
+
+          <article class="analysis-card">
+            <span class="analysis-category">Expansion Régionale</span>
+            <h4>Passer du modèle exportateur à l'implantation pérenne</h4>
+            <p>
+              Les étapes indispensables pour convertir des flux d'exportation occasionnels en véritable bastion commercial régional via le DIC™.
+            </p>
+            <a href="#contact" class="analysis-link">Étudier votre opportunité régionale →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Nos Offres -->
+    <section class="section section-gray" id="offres">
+      <div class="container">
+        <div class="section-badge">Nos offres</div>
+        <div class="section-header-centered">
+          <h2 class="section-title">Des formules adaptées à chaque stade de maturité</h2>
+          <p class="section-subtitle">
+            Que vous souhaitiez exporter, vous implanter durablement ou restructurer votre efficience opérationnelle.
+          </p>
+        </div>
+
+        <div class="grid-2col">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="plan-tag">Développement International</span>
+              <h3>1. Dispositif d’Implantation Commerciale (DIC™)</h3>
+              <p class="plan-audience"><strong>Pour qui ?</strong> Entreprises souhaitant commercialiser leurs offres en Afrique de l’Ouest.</p>
+            </div>
+            <ul class="plan-features">
+              <li>Audit du potentiel produit/marché en Afrique de l'Ouest</li>
+              <li>Cartographie et qualification des réseaux de distribution</li>
+              <li>Mise en relation d'affaires avec décideurs clés</li>
+              <li>Suivi d'amorçage opérationnel et commercial</li>
+            </ul>
+            <div class="pricing-action">
+              <a href="#contact" class="btn btn-outline-dark w-full text-center">Demander une proposition DIC</a>
+            </div>
+          </div>
+
+          <div class="pricing-card featured-plan">
+            <div class="featured-badge">Recommandé</div>
+            <div class="pricing-header">
+              <span class="plan-tag">Direction Générale & Stratégie</span>
+              <h3>2. Diagnostic IDT & Accompagnement MTI™</h3>
+              <p class="plan-audience"><strong>Pour qui ?</strong> PME/ETI voulant assainir leur fonctionnement interne et prouver leur rigueur aux partenaires.</p>
+            </div>
+            <ul class="plan-features">
+              <li>Diagnostic organisationnel complet de la Dette Temporelle</li>
+              <li>Notation officielle certifiée MTI™ sur 11 piliers (valable 12 mois)</li>
+              <li>Rapport de recommandations priorisées et plan d'action immédiat</li>
+              <li>4 mois d’ateliers de pilotage stratégique de direction</li>
+            </ul>
+            <div class="pricing-action">
+              <a href="#contact" class="btn btn-primary w-full text-center">Prendre rendez-vous avec un associé</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-badge">FAQ</div>
+        <div class="section-header-centered">
+          <h2 class="section-title">Foire Aux Questions</h2>
+          <p class="section-subtitle">Tout ce que vous devez savoir sur la MTI™, l'IDT et l'intervention de StratéNova.</p>
+        </div>
+
+        <div class="faq-container">
+          <!-- Accordion item 1 -->
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>Qu’est-ce que la MTI™ ?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                La Matrice de Transition Internationale (MTI™) est un instrument d’évaluation et d'analyse stratégique prédictive développé par StratéNova. Elle mesure la capacité d’une entreprise à anticiper, s’adapter et performer durablement dans un environnement économique complexe. Fondée sur 11 dimensions clés décomposées en 55 sous-critères, elle délivre un score global certifié.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion item 2 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>À quoi sert la certification MTI™ pour nos partenaires financiers ?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Être évalué MTI™, c’est afficher un haut niveau de rigueur stratégique. Cela rassure immédiatement vos investisseurs, banques, clients institutionnels et fournisseurs en démontrant que l'entreprise ne dépend pas d'opportunités hasardeuses mais dispose d'une gouvernance structurée et résiliente.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion item 3 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Quelle est la différence entre la MTI™ et un audit financier classique ?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Contrairement à une notation financière classique (qui regarde dans le rétroviseur pour évaluer la solvabilité passée), la MTI™ interroge la vision d'avenir, l'agilité organisationnelle, la résilience aux ruptures réglementaires et de marché. <em>« La notation financière vous dit si une entreprise allait bien hier, la MTI™ dit si elle est prête à bien aller demain. »</em>
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion item 4 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>À qui s’adresse l'Indice de la Dette Temporelle (IDT) ?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                L'IDT s'adresse en priorité aux fondateurs, directeurs généraux et comités de direction de PME et ETI en phase d'accélération en Côte d'Ivoire et en Afrique sub-saharienne, ainsi qu'aux groupes industriels (BTP, agro-industrie, transport, services financiers) cherchant à libérer de la valeur cachée.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion item 5 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Quelle est la durée de validité du diagnostic ?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Le diagnostic et le certificat de notation MTI™ sont valables 12 mois. Ils font l'objet d'un point d'étape d'actualisation en fonction de l’évolution des projets et des contextes de marché.
+              </p>
+            </div>
+          </details>
+
+          <!-- Accordion item 6 -->
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>StratéNova donne-t-il des conseils en investissement financier ?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Non. StratéNova ne fournit aucun conseil en investissement ou placement financier. Nos instruments (MTI™, IDT) sont des outils d'audit, de notation stratégique et d'aide à la décision organisationnelle et commerciale.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Contact / Prise de Rendez-vous -->
+    <section class="section section-dark" id="contact">
+      <div class="container">
+        <div class="section-badge gold">Contact</div>
+        <div class="grid-2col">
+          <div>
+            <h2 class="section-title text-white">Prenez les devants : échangez avec StratéNova</h2>
+            <p class="lead-text text-light">
+              Que ce soit pour évaluer la dette temporelle de vos équipes, initier un diagnostic MTI™ ou bâtir votre dispositif d'implantation en Afrique de l'Ouest, nos associés sont à votre écoute.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                  <div class="info-label">Téléphone direct</div>
+                  <a href="tel:+33651806055" class="info-link">+33 6 51 80 60 55</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="info-icon">📩</span>
+                <div>
+                  <div class="info-label">Courriel officiel</div>
+                  <a href="mailto:info@strate-nova.com" class="info-link">info@strate-nova.com</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="info-icon">🕙</span>
+                <div>
+                  <div class="info-label">Horaires d'ouverture</div>
+                  <span class="info-val">Lundi à Vendredi : 09h00 – 18h00</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <div class="info-label">Localisation & Rayonnement</div>
+                  <span class="info-val">Abidjan (Côte d'Ivoire) & Paris • Afrique de l'Ouest</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact / Rendez-vous Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Demander un rendez-vous confidentiel</h3>
+            <p class="form-subtitle">Nos associés vous recontactent sous 24 à 48 heures ouvrées.</p>
+
+            <form id="rdv-form" class="rdv-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-nom">Nom complet *</label>
+                  <input type="text" id="contact-nom" name="nom" required placeholder="ex. Jean Kouassi">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Courriel professionnel *</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="nom@entreprise.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-tel">Téléphone (avec indicatif)</label>
+                  <input type="tel" id="contact-tel" name="telephone" placeholder="+225 ... ou +33 ...">
+                </div>
+                <div class="form-group">
+                  <label for="contact-ste">Entreprise & Poste</label>
+                  <input type="text" id="contact-ste" name="entreprise" placeholder="ex. Directeur Général">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-sujet">Objet de votre demande</label>
+                <select id="contact-sujet" name="sujet">
+                  <option value="IDT">Diagnostic Indice de la Dette Temporelle (IDT)</option>
+                  <option value="MTI">Évaluation Matrice de Transition Internationale (MTI™)</option>
+                  <option value="DIC">Dispositif d'Implantation Commerciale (DIC™)</option>
+                  <option value="MA">Accompagnement Fusion / Acquisition / Croissance externe</option>
+                  <option value="Autre">Autre échange de direction</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-msg">Précisions sur votre contexte (facultatif)</label>
+                <textarea id="contact-msg" name="message" rows="3" placeholder="Décrivez succinctement vos priorités ou vos échéances..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full">Confirmer la demande de rendez-vous</button>
+
+              <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+
+              <p class="form-disclaimer">
+                En soumettant ce formulaire, vous acceptez notre <a href="#rgpd-modal" class="modal-trigger">politique de confidentialité</a>. Vos données restent strictement confidentielles.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-text-footer">StratéNova</span>
+          <span class="gold-square"></span>
+        </a>
+        <p class="footer-tagline">
+          Cabinet de conseil en stratégie, internationalisation & pilotage de la dette temporelle en Afrique de l'Ouest.
+        </p>
+        <p class="footer-copy">© <span id="year">2025</span> StratéNova. Tous droits réservés.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#cabinet">Le cabinet</a></li>
+          <li><a href="#dette-temporelle">Dette temporelle</a></li>
+          <li><a href="#idt">Indice IDT</a></li>
+          <li><a href="#expertises">Expertises DIC™ & MTI™</a></li>
+          <li><a href="#methode">Méthode & Analyses</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Instruments</h4>
+        <ul class="footer-links">
+          <li><a href="#idt">Indice de la Dette Temporelle</a></li>
+          <li><a href="#expertises">Matrice de Transition Internationale</a></li>
+          <li><a href="#expertises">Dispositif d'Implantation Commerciale</a></li>
+          <li><a href="#methode">Audit prédictif 11 dimensions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Légal & Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:info@strate-nova.com">info@strate-nova.com</a></li>
+          <li><a href="tel:+33651806055">+33 6 51 80 60 55</a></li>
+          <li><a href="#rgpd-modal" class="modal-trigger">Politique RGPD & Données</a></li>
+          <li><a href="#cgu-modal" class="modal-trigger">Conditions Générales d’Utilisation</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal RGPD -->
+  <div class="modal" id="rgpd-modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>Politique RGPD & Protection des données</h3>
+        <button class="modal-close" aria-label="Fermer la boîte">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>StratéNova attache la plus grande importance à la protection et au respect de la vie privée des dirigeants et des utilisateurs de ses services.</p>
+        <h4>Collecte et traitement</h4>
+        <p>Les informations recueillies via les formulaires de contact font l’objet d’un traitement informatique destiné exclusivement à la prise de contact et à l’instruction de vos demandes de rendez-vous par les associés du cabinet.</p>
+        <h4>Conservation et droits</h4>
+        <p>Vos données sont conservées pour une durée maximale de 24 mois et ne sont en aucun cas commercialisées ou cédées à des tiers. Conformément au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données en écrivant à info@strate-nova.com.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal CGU -->
+  <div class="modal" id="cgu-modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3>Conditions Générales d'Utilisation (CGU)</h3>
+        <button class="modal-close" aria-label="Fermer la boîte">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Propriété intellectuelle</h4>
+        <p>L'ensemble des marques, acronymes et méthodologies propriétaires cités sur ce site (notamment StratéNova, MTI™, DIC™, Indice de la Dette Temporelle IDT) constituent des œuvres de l'esprit protégées par les législations sur la propriété intellectuelle.</p>
+        <h4>Absence de conseil en investissement</h4>
+        <p>Les diagnostics, grilles de scoring et simulations présentés sur ce site ou dans les rapports StratéNova sont fournis à titre de diagnostic stratégique de direction et ne sauraient en aucun cas être assimilés à des recommandations de placement ou conseils financiers réglementés.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
