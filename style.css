@@ -104,13 +104,18 @@ button {
 /* Logo */
 .brand-logo {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
+  text-decoration: none;
+  line-height: 1;
 }
 
-.logo-img {
-  width: 90px;
-  height: 20px;
-  display: block;
+.logo-text-header {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 22px;
+  color: #10243a;
+  letter-spacing: -0.2px;
+  line-height: 1;
 }
 
 .logo-text-footer {
@@ -122,10 +127,11 @@ button {
 
 .brand-logo .gold-square {
   display: inline-block;
-  width: 4px;
-  height: 5px;
+  width: 4.5px;
+  height: 4.5px;
   background-color: var(--color-gold);
-  margin-left: 2px;
+  margin-left: 3px;
+  transform: translateY(-2px);
 }
 
 /* Desktop Navigation */
