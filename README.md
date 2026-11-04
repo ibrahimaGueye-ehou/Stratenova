@@ -25,7 +25,7 @@ Ce site vitrine reproduit fidèlement la maquette visuelle de référence (`Stra
    - Méthodologie en 4 étapes & comparatif avec les indicateurs financiers rétrospectifs traditionnels.
    - Analyses sectorielles et perspectives d'affaires en Afrique de l'Ouest.
    - Foire Aux Questions (FAQ) avec accordéons interactifs.
-   - Formulaire de prise de rendez-vous confidentiel et coordonnées directes (+33 6 51 80 60 55 / info@strate-nova.com).
+   - Formulaire de prise de rendez-vous confidentiel et coordonnées directes (+33 6 51 80 60 55 / info@stratenova.net).
    - Modales interactives pour la Politique RGPD et les Conditions Générales d'Utilisation (CGU).
 
 ---
