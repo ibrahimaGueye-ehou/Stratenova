@@ -84,29 +84,82 @@ document.addEventListener('DOMContentLoaded', () => {
   const formFeedback = document.getElementById('form-feedback');
 
   if (rdvForm) {
-    rdvForm.addEventListener('submit', (e) => {
+    // Les demandes sont transmises par email à l'adresse du cabinet via FormSubmit
+    const RDV_ENDPOINT = 'https://formsubmit.co/ajax/info@stratenova.net';
+    const submitBtn = rdvForm.querySelector('button[type="submit"]');
+
+    const showFeedback = (html, type) => {
+      if (!formFeedback) return;
+      formFeedback.innerHTML = html;
+      formFeedback.className = `form-feedback ${type}`;
+      formFeedback.style.display = 'block';
+    };
+
+    const escapeHtml = (str) => str.replace(/[&<>"']/g, (c) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[c]));
+
+    rdvForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const nom = document.getElementById('contact-nom').value.trim();
       const email = document.getElementById('contact-email').value.trim();
 
       if (!nom || !email) {
-        if (formFeedback) {
-          formFeedback.textContent = 'Veuillez remplir les champs obligatoires (nom et email).';
-          formFeedback.className = 'form-feedback alert-critical';
-          formFeedback.style.display = 'block';
-        }
+        showFeedback('Veuillez remplir les champs obligatoires (nom et email).', 'alert-critical');
         return;
       }
 
-      // Simulate successful submission
-      if (formFeedback) {
-        formFeedback.innerHTML = `<strong>Merci ${nom} !</strong> Votre demande de rendez-vous a bien été enregistrée. Un associé de StratéNova prendra contact avec vous sous 24 à 48 heures.`;
-        formFeedback.className = 'form-feedback success';
-        formFeedback.style.display = 'block';
+      const sujetSelect = document.getElementById('contact-sujet');
+      const payload = {
+        'Nom complet': nom,
+        'Courriel': email,
+        'Téléphone': document.getElementById('contact-tel').value.trim() || '—',
+        'Entreprise & Poste': document.getElementById('contact-ste').value.trim() || '—',
+        'Objet': sujetSelect.options[sujetSelect.selectedIndex].text,
+        'Message': document.getElementById('contact-msg').value.trim() || '—',
+        _subject: `Nouvelle demande de rendez-vous – ${nom}`,
+        _replyto: email,
+        _template: 'table',
+        _captcha: 'false',
+        _honey: rdvForm.querySelector('input[name="_honey"]')?.value || ''
+      };
+
+      const originalLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours…';
       }
 
-      rdvForm.reset();
+      try {
+        const response = await fetch(RDV_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || result.success === false || result.success === 'false') {
+          throw new Error(result.message || `HTTP ${response.status}`);
+        }
+
+        showFeedback(
+          `<strong>Merci ${escapeHtml(nom)} !</strong> Votre demande de rendez-vous a bien été transmise. Un associé de StratéNova prendra contact avec vous sous 24 à 48 heures.`,
+          'success'
+        );
+        rdvForm.reset();
+      } catch (err) {
+        console.error('Envoi du formulaire impossible :', err);
+        showFeedback(
+          'Une erreur est survenue lors de l’envoi. Merci de réessayer ou de nous écrire directement à <a href="mailto:info@stratenova.net">info@stratenova.net</a>.',
+          'alert-critical'
+        );
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+        }
+      }
     });
   }
 
